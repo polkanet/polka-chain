@@ -46,8 +46,10 @@ fn createGenesisBlock() Block { // We need to pass in block because
 }
 
 pub fn main() void {
+    // Just some prints - regarding the project.
     std.debug.print("Polka L1 Blockchain\n", .{});
 
+    // Call the createGenesisBlock function.
     const genesis = createGenesisBlock();
 
     std.debug.print("Genesis Block:\n", .{});
