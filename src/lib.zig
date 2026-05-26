@@ -16,7 +16,7 @@ fn calculateHash(block: genesis.BlockGenesis) [32]u8 {
     hasher.update(&block.prev_hash); // Updates the hasher with the previous block's hash, which is already a byte array.
     hasher.update(std.mem.asBytes(&block.nonce));
 
-    var out: [32]u8 = undefined;
-    hasher.final(&out);
-    return out;
+    var out: [32]u8 = undefined; // Undefined output buffer.
+    hasher.final(&out); // Load the final thing in out.
+    return out; // Return output.
 }

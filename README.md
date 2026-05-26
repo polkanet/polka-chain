@@ -26,7 +26,7 @@ zig build
 ### Running
 
 ```bash
-./zig-out/bin/aetheris-node start
+./zig-out/bin/polka start
 ```
 
 ### Testing
@@ -40,6 +40,6 @@ zig build test
 - `src/main.zig`: Application entry point and CLI handler.
 - `src/node/`: Core node logic and consensus engine.
 - `src/net/`: P2P networking and gossip protocols.
-- `src/vm/`: The AetherVM execution engine.
+- `src/vm/`: The PolkaVM execution engine.
 - `src/storage/`: State storage and indexed block database.
 - `src/crypto/`: Hashing and signature verification.
