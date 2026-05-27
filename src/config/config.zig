@@ -15,6 +15,6 @@ pub const Config = struct {
             pub const ChainID: u64 = 3; // Unique identifier for the development network.
             pub const Name: []const u8 = "Devnet"; // Development network for local development.
         };
-        // TODO: Add more chain types.
+        // TODO: Add more chain types. ASAP.
     };
 };
